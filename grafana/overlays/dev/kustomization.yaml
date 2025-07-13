@@ -25,7 +25,7 @@ patches:
         value: grafana
   - target:
       kind: ConfigMap
-      name: grafana
+      name: grafana-config
     patch: |
       - op: add
         path: /metadata/namespace
