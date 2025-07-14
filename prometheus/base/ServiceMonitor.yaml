@@ -3,6 +3,8 @@ kind: ServiceMonitor
 metadata:
   name: backend-app-monitor
   namespace: grafana
+  labels:
+    release: prometheus
 spec:
   selector:
     matchLabels:
