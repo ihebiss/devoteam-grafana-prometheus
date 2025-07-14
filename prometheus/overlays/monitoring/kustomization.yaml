@@ -1,0 +1,18 @@
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Deployment
+      name: prometheus
+    patch: |-
+      - op: add
+        path: /metadata/namespace
+        value: grafana
+  - target:
+      kind: Service
+      name: prometheus
+    patch: |-
+      - op: add
+        path: /metadata/namespace
+        value: grafana
