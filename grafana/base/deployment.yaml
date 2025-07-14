@@ -27,8 +27,6 @@ spec:
         - name: config
           configMap:
             name: grafana-config
-            
-      volumes:
         - name: grafana-storage
           persistentVolumeClaim:
             claimName: grafana-pvc
