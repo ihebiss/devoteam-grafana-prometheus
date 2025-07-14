@@ -1,5 +1,7 @@
 resources:
   - ../../base
+patchesStrategicMerge: 
+  - ServiceMonitor.yaml
 
 patches:
   - target:
