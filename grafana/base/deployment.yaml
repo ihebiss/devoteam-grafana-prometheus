@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: grafana
+  annotations:
+   backup.velero.io/backup-volumes: grafana-pvc
 spec:
   replicas: 2 
   selector:
